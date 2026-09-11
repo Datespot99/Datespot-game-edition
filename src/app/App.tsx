@@ -115,16 +115,16 @@ const VIDEOS   = ['https://player.vimeo.com/video/1182421154', 'https://player.v
 const QUESTIONS = ['Is this genuine?', 'How much is entry fee?', 'Refunds available?', 'Genuine Bangalore girls?', 'How to join?'];
 const AUDIO_FILES = [null, null, null, faq4Audio, faq5Audio];
 const REVIEWS = [
-  { name: 'Rahul M.',       area: 'Koramangala', text: 'Way better than any dating apps I have tried. Met two amazing women so far, both real and verified.' },
+  { name: 'Rahul M.',       area: 'Koramangala', text: 'Avn akkun pysch group bro, Loved it!!.' },
   { name: 'Vikram Shetty.', area: 'Indiranagar',  text: 'Finally ondhu genuine group sikthu. Admin is very responsive and the women are real. Genuinely recommend.' },
-  { name: 'Karan D.',       area: 'HSR Layout',   text: 'Real girls, real chats. Nothing like the fake bots on Tinder or Bumble. Worth every rupee.' },
-  { name: 'Aditya P.',      area: 'Whitefield',   text: "Was skeptical at first but it's 100% worth it. The voice call feature is a great way to vibe before meeting." },
+  { name: 'Karan D.',       area: 'HSR Layout',   text: 'Liked how proffessional everything is, Worth every rupee.' },
+  { name: 'Aditya P.',      area: 'Whitefield',   text: "Modlu nambokke agilla but it's 100% worth it. After voice call i got trust before meeting." },
   { name: 'Rohan Gowda.',   area: 'JP Nagar',     text: 'Already arranged a meet within my first week. Active group, daily new faces. Super recommend bro.' },
-  { name: 'Suresh Naik.',   area: 'Marathahalli', text: 'Met my current girlfriend here lol. Very organised, zero spam and the admin actually screens people.' },
-  { name: 'Arjun K.',       area: 'Jayanagar',    text: 'Best ₹1500 I have spent this year honestly. The group is always active, quality women from Bangalore.' },
-  { name: 'Dev Menon.',     area: 'BTM Layout',   text: 'Three meets in two months. The vibe here is very different from regular apps — feels real and personal.' },
-  { name: 'Sagar R.',       area: 'Electronic City', text: 'Legit group. Admin does proper verification so you know everyone is genuine. No nonsense.' },
-  { name: 'Nikhil T.',      area: 'Yelahanka',    text: 'Joined on a friend\'s suggestion and I\'m glad I did. Active daily, good conversations and easy to arrange meets.' },
+  { name: 'Suresh Naik.',   area: 'Marathahalli', text: 'Met my current partner here. Very organised, thanks subhash bro for guiding me to meet her.' },
+  { name: 'Arjun K.',       area: 'Jayanagar',    text: 'The group is always active now then before, add more women from Bangalore.' },
+  { name: 'Dev Menon.',     area: 'BTM Layout',   text: 'Three meets in two months. The service here is very different from regular dating — feels safe and premium.' },
+  { name: 'Sagar R.',       area: 'Electronic City', text: 'Legit group bro. Admin does proper verification so you know everyone is genuine. No nonsense.' },
+  { name: 'Nikhil T.',      area: 'Yelahanka',    text: 'Joined on a friend\'s suggestion and I\'m glad I did good conversations and easy meets.' },
 ];
 
 // ─── Glassmorphic blob ────────────────────────────────────────────────────────
@@ -751,8 +751,8 @@ function StickyCTA({ onJoin }: { onJoin: () => void }) {
               style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%)', width: '60%' }} />
             <div className="relative flex items-center justify-center gap-3 py-3.5 px-6">
               <span className="font-black text-white text-sm tracking-tight">Join Datespot</span>
-              <span className="text-white/40 text-[11px] line-through font-semibold">₹999</span>
-              <span className="font-black text-white text-sm">₹99</span>
+              <span className="text-white/40 text-[11px] line-through font-semibold">₹1999</span>
+              <span className="font-black text-white text-sm">₹999</span>
               <ArrowRight className="w-4 h-4 text-white" />
             </div>
           </motion.button>
@@ -901,8 +901,8 @@ function MobileApp() {
 
               {/* Price */}
               <div className="flex items-baseline gap-2 justify-center">
-                <span className="text-sm line-through font-semibold" style={{ color: T.MUTED }}>₹999</span>
-                <span className="font-black text-4xl leading-none" style={{ color: B1 }}>₹99</span>
+                <span className="text-sm line-through font-semibold" style={{ color: T.MUTED }}>₹1999</span>
+                <span className="font-black text-4xl leading-none" style={{ color: B1 }}>₹999</span>
               </div>
 
               {/* CTA Button */}
@@ -1163,7 +1163,7 @@ function DesktopVersion({ onOpenPayment, showPayment, onClosePayment, paymentTyp
             <h2 className="font-extrabold mb-2" style={{ color: T.DARK, fontSize: 40, letterSpacing: '-0.03em' }}>Ready to Join?</h2>
             <div className="flex items-baseline gap-2 justify-center mb-6">
               <span className="text-lg line-through font-semibold" style={{ color: T.MUTED }}>₹1999</span>
-              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹99</span>
+              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹999</span>
             </div>
             <button onClick={() => onOpenPayment('full')}
               className="rounded-2xl font-black text-white text-lg flex items-center gap-3 mx-auto relative overflow-hidden transition-all hover:scale-105 mb-4"
@@ -1365,8 +1365,8 @@ type UploadState = 'idle' | 'verifying' | 'success';
 
 function PaymentModal({ onClose, paymentType }: { onClose: () => void; paymentType: 'full' | 'demo' }) {
   const UPI_ID        = 'paytm.s36oa7e@pty';
-  const AMOUNT        = '99';
-  const ORIGINAL_AMT  = '999';
+  const AMOUNT        = '999';
+  const ORIGINAL_AMT  = '1999';
   const WHATSAPP_LINK = 'https://t.me/+wHPA3hSr4c85ZWY1';
   const upiUrl        = `upi://pay?pa=${UPI_ID}&pn=Datespot&am=${AMOUNT}&cu=INR`;
 
