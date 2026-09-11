@@ -115,8 +115,8 @@ const VIDEOS   = ['https://player.vimeo.com/video/1182421154', 'https://player.v
 const QUESTIONS = ['Is this genuine?', 'How much is entry fee?', 'Refunds available?', 'Genuine Bangalore girls?', 'How to join?'];
 const AUDIO_FILES = [null, null, null, faq4Audio, faq5Audio];
 const REVIEWS = [
-  { name: 'Rahul M.',       area: 'Koramangala', text: 'Way better than any dating app I have tried. Met two amazing women so far, both real and verified.' },
-  { name: 'Vikram Shetty.', area: 'Indiranagar',  text: 'Finally ondhu genuine group sikthu. Admin is very responsive and the crowd is legit. Genuinely recommend.' },
+  { name: 'Rahul M.',       area: 'Koramangala', text: 'Way better than any dating apps I have tried. Met two amazing women so far, both real and verified.' },
+  { name: 'Vikram Shetty.', area: 'Indiranagar',  text: 'Finally ondhu genuine group sikthu. Admin is very responsive and the women are real. Genuinely recommend.' },
   { name: 'Karan D.',       area: 'HSR Layout',   text: 'Real girls, real chats. Nothing like the fake bots on Tinder or Bumble. Worth every rupee.' },
   { name: 'Aditya P.',      area: 'Whitefield',   text: "Was skeptical at first but it's 100% worth it. The voice call feature is a great way to vibe before meeting." },
   { name: 'Rohan Gowda.',   area: 'JP Nagar',     text: 'Already arranged a meet within my first week. Active group, daily new faces. Super recommend bro.' },
@@ -751,8 +751,8 @@ function StickyCTA({ onJoin }: { onJoin: () => void }) {
               style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.18) 50%, transparent 100%)', width: '60%' }} />
             <div className="relative flex items-center justify-center gap-3 py-3.5 px-6">
               <span className="font-black text-white text-sm tracking-tight">Join Datespot</span>
-              <span className="text-white/40 text-[11px] line-through font-semibold">₹2999</span>
-              <span className="font-black text-white text-sm">₹1500</span>
+              <span className="text-white/40 text-[11px] line-through font-semibold">₹999</span>
+              <span className="font-black text-white text-sm">₹99</span>
               <ArrowRight className="w-4 h-4 text-white" />
             </div>
           </motion.button>
@@ -901,8 +901,8 @@ function MobileApp() {
 
               {/* Price */}
               <div className="flex items-baseline gap-2 justify-center">
-                <span className="text-sm line-through font-semibold" style={{ color: T.MUTED }}>₹2999</span>
-                <span className="font-black text-4xl leading-none" style={{ color: B1 }}>₹1500</span>
+                <span className="text-sm line-through font-semibold" style={{ color: T.MUTED }}>₹999</span>
+                <span className="font-black text-4xl leading-none" style={{ color: B1 }}>₹99</span>
               </div>
 
               {/* CTA Button */}
@@ -1162,8 +1162,8 @@ function DesktopVersion({ onOpenPayment, showPayment, onClosePayment, paymentTyp
             </div>
             <h2 className="font-extrabold mb-2" style={{ color: T.DARK, fontSize: 40, letterSpacing: '-0.03em' }}>Ready to Join?</h2>
             <div className="flex items-baseline gap-2 justify-center mb-6">
-              <span className="text-lg line-through font-semibold" style={{ color: T.MUTED }}>₹2999</span>
-              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹1500</span>
+              <span className="text-lg line-through font-semibold" style={{ color: T.MUTED }}>₹1999</span>
+              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹99</span>
             </div>
             <button onClick={() => onOpenPayment('full')}
               className="rounded-2xl font-black text-white text-lg flex items-center gap-3 mx-auto relative overflow-hidden transition-all hover:scale-105 mb-4"
@@ -1365,8 +1365,8 @@ type UploadState = 'idle' | 'verifying' | 'success';
 
 function PaymentModal({ onClose, paymentType }: { onClose: () => void; paymentType: 'full' | 'demo' }) {
   const UPI_ID        = 'paytm.s36oa7e@pty';
-  const AMOUNT        = '1500';
-  const ORIGINAL_AMT  = '2999';
+  const AMOUNT        = '99';
+  const ORIGINAL_AMT  = '999';
   const WHATSAPP_LINK = 'https://t.me/+wHPA3hSr4c85ZWY1';
   const upiUrl        = `upi://pay?pa=${UPI_ID}&pn=Datespot&am=${AMOUNT}&cu=INR`;
 
