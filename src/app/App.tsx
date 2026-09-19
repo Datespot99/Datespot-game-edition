@@ -251,7 +251,7 @@ function GroupPreviewSlider({ images, mobile = false }: { images: string[]; mobi
 }
 
 // ─── Lead Modal ───────────────────────────────────────────────────────────────
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycby5yLNtWOTeTx1qI0Qv_-hiFri1UAn3Th4VzdaW4gDSKYNjPFftUWtKqiGaEGzfW4LC2g/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyCKSBtujafafwO6z_vwD7y0NfMFD7qG3nHdNOBEi-oWXg9yyBFCiGzESM-hFpcaAyg/exec';
 
 function LeadModal({ onClose, onComplete }: { onClose: () => void; onComplete: () => void }) {
   const [name, setName]       = useState('');
