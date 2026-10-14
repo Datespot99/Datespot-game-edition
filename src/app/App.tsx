@@ -1163,7 +1163,7 @@ function DesktopVersion({ onOpenPayment, showPayment, onClosePayment, paymentTyp
             <h2 className="font-extrabold mb-2" style={{ color: T.DARK, fontSize: 40, letterSpacing: '-0.03em' }}>Ready to Join?</h2>
             <div className="flex items-baseline gap-2 justify-center mb-6">
               <span className="text-lg line-through font-semibold" style={{ color: T.MUTED }}>₹1999</span>
-              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹599</span>
+              <span className="font-black" style={{ fontSize: 48, color: B1, lineHeight: 1 }}>₹999</span>
             </div>
             <button onClick={() => onOpenPayment('full')}
               className="rounded-2xl font-black text-white text-lg flex items-center gap-3 mx-auto relative overflow-hidden transition-all hover:scale-105 mb-4"
@@ -1364,8 +1364,8 @@ function VoiceMessageBubble({ audioSrc, isUser }: { audioSrc?: string; isUser?: 
 type UploadState = 'idle' | 'verifying' | 'success';
 
 function PaymentModal({ onClose, paymentType }: { onClose: () => void; paymentType: 'full' | 'demo' }) {
-  const UPI_ID        = 'paytm.s36oa7e@pty';
-  const AMOUNT        = '599';
+  const UPI_ID        = 'https://datespot.in/';
+  const AMOUNT        = '999';
   const ORIGINAL_AMT  = '1999';
   const WHATSAPP_LINK = 'https://t.me/+JOYVaKXWmeI5NThl';
   const upiUrl        = `upi://pay?pa=${UPI_ID}&pn=Datespot&am=${AMOUNT}&cu=INR`;
