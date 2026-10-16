@@ -1364,7 +1364,7 @@ function VoiceMessageBubble({ audioSrc, isUser }: { audioSrc?: string; isUser?: 
 type UploadState = 'idle' | 'verifying' | 'success';
 
 function PaymentModal({ onClose, paymentType }: { onClose: () => void; paymentType: 'full' | 'demo' }) {
-  const UPI_ID        = 'https://datespot.in/';
+  const UPI_ID        = 'BHARATPE2R0S0C1D6V46619@unitype';
   const AMOUNT        = '599';
   const ORIGINAL_AMT  = '1999';
   const WHATSAPP_LINK = 'https://t.me/+JOYVaKXWmeI5NThl';
