@@ -1365,7 +1365,7 @@ type UploadState = 'idle' | 'verifying' | 'success';
 
 function PaymentModal({ onClose, paymentType }: { onClose: () => void; paymentType: 'full' | 'demo' }) {
   const UPI_ID        = 'https://datespot.in/';
-  const AMOUNT        = '999';
+  const AMOUNT        = '599';
   const ORIGINAL_AMT  = '1999';
   const WHATSAPP_LINK = 'https://t.me/+JOYVaKXWmeI5NThl';
   const upiUrl        = `upi://pay?pa=${UPI_ID}&pn=Datespot&am=${AMOUNT}&cu=INR`;
